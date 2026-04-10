@@ -311,7 +311,8 @@
                     </a>
                   </span> -->
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <!-- Code button commented out -->
+                  <!--
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -321,10 +322,11 @@
                     <span>Code</span>
                   </a>
                 </span>
+                  -->
 
                 <!-- Benchmark -->
                 <span class="link-block">
-                  <a href="" target="_blank"
+                  <a href="https://huggingface.co/datasets/DanielXu0208/MultiHaystack_Full" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" style="height:1em;">
@@ -333,9 +335,8 @@
                 </a>
               </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2603.05697" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -356,7 +357,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <iframe src="static/pdfs/compare_haystack.pdf" width="100%" height="600" style="border:none;"></iframe>
+      <img src="static/images/figures/compare_haystack-1.png" width="100%" style="display:block;" alt="Comparison with existing visual question answering benchmarks">
       <h2 class="subtitle has-text-centered">
         <strong>Comparison with existing visual question answering benchmarks.</strong>
         Existing benchmarks often suffer from three key limitations: (i) ambiguous evidence
@@ -395,49 +396,49 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
-          <iframe src="static/pdfs/distribution_plot.pdf" width="100%" height="600" style="border:none;"></iframe>
+          <img src="static/images/figures/distribution_plot-1.png" width="100%" style="display:block;" alt="Distribution plot">
           <h2 class="subtitle has-text-centered">
             Examples of six tasks in MultiHaystack: Visual Parsing &amp; Positioning (spatial layouts), Contextual Understanding (embedded text), Video Temporal Reasoning (motion/order), Statistical Reasoning (charts/tables), Metadata Identification (affiliations/timestamps), and Factual Knowledge Retrieval (corpus-grounded facts).
           </h2>
         </div>
         <div class="item">
-          <iframe src="static/pdfs/data_construct.pdf" width="100%" height="600" style="border:none;"></iframe>
+          <img src="static/images/figures/data_construct-1.png" width="100%" style="display:block;" alt="Benchmark construction pipeline">
           <h2 class="subtitle has-text-centered">
             Benchmark construction pipeline. MultiHaystack is built in four stages: collecting diverse multimodal sources, generating specific QA pairs, filtering for unique and grounded answers, and enriching with data. This design ensures coverage across six tasks (Fig. 3) and overcomes the unimodal, small-scale, or ambiguous limitations of prior benchmarks.
           </h2>
         </div>
         <div class="item">
-          <iframe src="static/pdfs/error_analysis.pdf" width="100%" height="600" style="border:none;"></iframe>
+          <img src="static/images/figures/error_analysis-1.png" width="100%" style="display:block;" alt="Error analysis">
           <h2 class="subtitle has-text-centered">
             Error cases illustrating retrieval errors, including modality bias (retrieving images instead of video evidence) and semantic drift (violating temporal constraints), and reasoning errors, including visual numeracy (misreading numbers in charts) and layout-aware multi-step reasoning (failing to integrate structured cues across layouts).
           </h2>
         </div>
         <div class="item">
-          <iframe src="static/pdfs/performance_compare.pdf" width="100%" height="600" style="border:none;"></iframe>
+          <img src="static/images/figures/performance_compare-1.png" width="100%" style="display:block;" alt="Performance comparison">
           <h2 class="subtitle has-text-centered">
             Performance on MultiHaystack. "Gold in Top-1/5" directly provides answer-containing files; "Single-Modality" and "Cross-Modality" require retrieval within one or across multiple modalities.
           </h2>
         </div>
         <div class="item">
-          <iframe src="static/pdfs/Ablation.pdf" width="100%" height="600" style="border:none;"></iframe>
+          <img src="static/images/figures/Ablation-1.png" width="100%" style="display:block;" alt="Ablation study">
           <h2 class="subtitle has-text-centered">
             Top-k ablation analysis for MLLMs integrated with E5-V.
           </h2>
         </div>
         <div class="item">
-          <iframe src="static/pdfs/video_image_doc_radar.pdf" width="100%" height="600" style="border:none;"></iframe>
+          <img src="static/images/figures/video_image_doc_radar-1.png" width="100%" style="display:block;" alt="Video image document radar comparison">
           <h2 class="subtitle has-text-centered">
             Comparison in three distinct modalities. (a) represents the video modality, (b) represents the image modality, and (c) represents the document modality.
           </h2>
         </div>
         <div class="item">
-          <iframe src="static/pdfs/reviewer93AH_weak3.pdf" width="100%" height="600" style="border:none;"></iframe>
+          <img src="static/images/figures/reviewer93AH_weak3-1.png" width="100%" style="display:block;" alt="Pool-size controlled comparison">
           <h2 class="subtitle has-text-centered">
             Pool-size controlled comparison. Recall of MM-Embed under single-modality retrieval and mixed-modality retrieval with an identical total pool size. Performance remains substantially lower in the mixed-modality condition, indicating that the cross-modal gap arises from modality heterogeneity rather than pool size.
           </h2>
         </div>
         <div class="item">
-          <iframe src="static/pdfs/distractor_study.pdf" width="100%" height="600" style="border:none;"></iframe>
+          <img src="static/images/figures/distractor_study-1.png" width="100%" style="display:block;" alt="Distractor study">
           <h2 class="subtitle has-text-centered">
             Effect of data enrichment under varying candidate pool sizes, showing that recall consistently drops as the pool expands.
           </h2>
